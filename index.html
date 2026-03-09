@@ -24,27 +24,23 @@
         <a href="#services">What we do</a>
         <a href="#why-us">Why choose us</a>
         <a href="#testimonials">Testimonials</a>
+        <a href="#careers">Join our team</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="header-right">
         <div class="login-dropdown" data-login-dropdown>
           <button class="login-toggle" type="button" aria-haspopup="true" aria-expanded="false">
             <span class="login-label">Login</span>
-            <span class="login-current">Select role</span>
             <span class="login-chevron">▾</span>
           </button>
           <div class="login-menu" role="menu" aria-label="Login options">
-            <a href="#doctor-portal" class="login-item" role="menuitem" data-login-role="Doctors">
-              <span class="login-item-title">Doctors</span>
-              <span class="login-item-desc">Access the doctor portal</span>
+            <a href="#" class="login-item" role="menuitem">
+              <span class="login-item-title">Go to login portal</span>
+              <span class="login-item-desc">Use your existing LivingRite Care login details.</span>
             </a>
-            <a href="#nurse-portal" class="login-item" role="menuitem" data-login-role="Nurses">
-              <span class="login-item-title">Nurses</span>
-              <span class="login-item-desc">Access the nurse portal</span>
-            </a>
-            <a href="#patient-portal" class="login-item" role="menuitem" data-login-role="Patients &amp; family">
-              <span class="login-item-title">Patients &amp; family</span>
-              <span class="login-item-desc">Access the participant portal</span>
+            <a href="#doctor-application" class="login-item" role="menuitem">
+              <span class="login-item-title">Doctor application form</span>
+              <span class="login-item-desc">Answer screening questions and upload your credentials.</span>
             </a>
           </div>
         </div>
@@ -225,38 +221,6 @@
       </div>
     </section>
 
-    <section id="portals" class="section">
-      <div class="container">
-        <header class="section-header">
-          <h2>Log in to your LivingRite Care portal</h2>
-          <p>Secure online access for doctors, nurses, and families coordinating care at home.</p>
-        </header>
-        <div class="grid grid-3">
-          <article id="doctor-portal" class="card">
-            <h3>Doctor login</h3>
-            <p>
-              Access patient updates, care plans, and progress notes so hospital and homecare teams stay aligned.
-            </p>
-            <a href="#" class="portal-link">Go to doctor portal</a>
-          </article>
-          <article id="nurse-portal" class="card">
-            <h3>Nurse login</h3>
-            <p>
-              Manage visits, document observations, and follow clinical protocols for every patient in your care.
-            </p>
-            <a href="#" class="portal-link">Go to nurse portal</a>
-          </article>
-          <article id="patient-portal" class="card">
-            <h3>Patient &amp; family login</h3>
-            <p>
-              View schedules, share updates, and stay informed about daily care delivered to you or your loved one.
-            </p>
-            <a href="#" class="portal-link">Go to patient portal</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section id="testimonials" class="section">
       <div class="container">
         <header class="section-header">
@@ -284,6 +248,87 @@
             </p>
             <p class="hero-meta-label">Monica &mdash; Lekki, Lagos</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="careers" class="section section-muted">
+      <div class="container">
+        <header class="section-header">
+          <h2>We’re recruiting doctors and nurses</h2>
+          <p>Join LivingRite Care’s growing team bringing expert, compassionate homecare to patients across Lagos and surrounding areas.</p>
+        </header>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>For doctors</h3>
+            <p>
+              Collaborate with a multidisciplinary team to deliver hospital-level care at home – from post-ICU recovery to complex chronic disease management.
+            </p>
+            <p class="hero-meta-label">Ideal for consultants and GPs with an interest in home-based care.</p>
+            <a href="#doctor-application" class="portal-link">Apply as a doctor</a>
+          </article>
+          <article class="card">
+            <h3>For nurses</h3>
+            <p>
+              Provide one-on-one, patient-centred nursing in a calm home environment, supported by clear protocols and ongoing professional development.
+            </p>
+            <p class="hero-meta-label">Suitable for RNs with experience in ICU, medical-surgical, or community nursing.</p>
+            <a href="mailto:careers@example-livingritecare.com?subject=Nurse%20Application%20-%20LivingRite%20Care" class="portal-link">Apply as a nurse</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="doctor-application" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Doctor application form</h2>
+          <p>Answer a few quick questions and upload your credentials so our recruitment team can review your profile.</p>
+        </header>
+        <div class="hero-card">
+          <form class="hero-form" id="doctor-application-form">
+            <div class="field">
+              <label for="doctor-name">Full name</label>
+              <input type="text" id="doctor-name" name="doctor-name" placeholder="Dr. Jane Doe" required />
+            </div>
+            <div class="field field-inline">
+              <div>
+                <label for="doctor-email">Email</label>
+                <input type="email" id="doctor-email" name="doctor-email" placeholder="you@example.com" required />
+              </div>
+              <div>
+                <label for="doctor-phone">Phone (Nigeria)</label>
+                <input type="tel" id="doctor-phone" name="doctor-phone" placeholder="+234..." required />
+              </div>
+            </div>
+            <div class="field field-inline">
+              <div>
+                <label for="specialty">Medical specialty</label>
+                <input type="text" id="specialty" name="specialty" placeholder="E.g. Internal Medicine, Family Medicine" />
+              </div>
+              <div>
+                <label for="experience-years">Years of experience</label>
+                <input type="number" id="experience-years" name="experience-years" min="0" placeholder="5" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="lagos-based">Are you currently based in Lagos or able to travel regularly to Lagos?</label>
+              <select id="lagos-based" name="lagos-based">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="doctor-notes">Tell us about your interest in home-based care</label>
+              <textarea id="doctor-notes" name="doctor-notes" rows="3" placeholder="Share relevant experience with homecare, ICU, chronic disease management, or elderly care."></textarea>
+            </div>
+            <div class="field">
+              <label for="credentials">Upload credentials (CV, license, certificates)</label>
+              <input type="file" id="credentials" name="credentials" multiple />
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Submit application (demo only)</button>
+            <p class="form-note">This demo form does not send data, but shows how LivingRite Care could collect applications.</p>
+          </form>
         </div>
       </div>
     </section>
@@ -342,45 +387,34 @@
       });
     }
 
-    // Header login dropdown behaviour
-    const dropdown = document.querySelector('[data-login-dropdown]');
-    if (dropdown) {
-      const toggle = dropdown.querySelector('.login-toggle');
-      const menu = dropdown.querySelector('.login-menu');
-      const current = dropdown.querySelector('.login-current');
+    // Simple generic login dropdown with doctor application alternative
+    const loginDropdown = document.querySelector('[data-login-dropdown]');
+    if (loginDropdown) {
+      const loginToggle = loginDropdown.querySelector('.login-toggle');
+      const loginMenu = loginDropdown.querySelector('.login-menu');
 
-      function closeMenu() {
-        dropdown.classList.remove('is-open');
-        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      function closeLoginMenu() {
+        loginDropdown.classList.remove('is-open');
+        if (loginToggle) loginToggle.setAttribute('aria-expanded', 'false');
       }
 
-      function openMenu() {
-        dropdown.classList.add('is-open');
-        if (toggle) toggle.setAttribute('aria-expanded', 'true');
+      function openLoginMenu() {
+        loginDropdown.classList.add('is-open');
+        if (loginToggle) loginToggle.setAttribute('aria-expanded', 'true');
       }
 
-      toggle.addEventListener('click', function () {
-        const open = dropdown.classList.contains('is-open');
+      loginToggle.addEventListener('click', function () {
+        const open = loginDropdown.classList.contains('is-open');
         if (open) {
-          closeMenu();
+          closeLoginMenu();
         } else {
-          openMenu();
+          openLoginMenu();
         }
-      });
-
-      menu.addEventListener('click', function (event) {
-        const item = event.target.closest('.login-item');
-        if (!item) return;
-        const role = item.getAttribute('data-login-role');
-        if (role && current) {
-          current.textContent = role;
-        }
-        closeMenu();
       });
 
       document.addEventListener('click', function (event) {
-        if (!dropdown.contains(event.target)) {
-          closeMenu();
+        if (!loginDropdown.contains(event.target)) {
+          closeLoginMenu();
         }
       });
     }
