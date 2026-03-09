@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Living Right Care – Your goals. Your choices. Lived right.</title>
+  <meta name="description" content="Living Right Care provides compassionate disability and aged care support services including support work, transport, and home & yard maintenance so you can live life your way." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark">LR</div>
+        <div class="brand-text">
+          <span class="brand-name">Living Right Care</span>
+          <span class="brand-tagline">Your goals. Your choices. Lived right.</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why us</a>
+        <a href="#process">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-right">
+        <div class="login-links">
+          <span class="login-label">Login</span>
+          <a href="#doctor-portal">Doctors</a>
+          <span class="divider">•</span>
+          <a href="#nurse-portal">Nurses</a>
+          <span class="divider">•</span>
+          <a href="#patient-portal">Patients</a>
+        </div>
+        <a href="#contact" class="btn btn-outline header-cta">Book a meet &amp; greet</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Your goals. Your choices. <span class="accent">Lived right.</span></h1>
+          <p class="hero-lead">
+            Living Right Care provides compassionate disability and aged-care support that fits around your life —
+            so you can stay independent, connected, and in control of your day.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book a free meet &amp; greet</a>
+            <button class="btn btn-ghost" data-scroll-to="#services">Explore our services</button>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="hero-meta-label">Support we can help with</span>
+              <span class="hero-meta-value">Daily living · Social &amp; community · Transport · Home &amp; yard</span>
+            </div>
+            <div class="hero-meta-pill">Compassionate, person-centred care</div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <h2>Let’s chat about how we can support you</h2>
+            <p>Tell us a little about yourself and we’ll reach out for a friendly, no-obligation conversation.</p>
+          </div>
+          <form class="hero-form" id="quick-contact-form">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Alex Smith" required />
+            </div>
+            <div class="field">
+              <label for="role">I’m enquiring as</label>
+              <select id="role" name="role">
+                <option value="participant">Person seeking support</option>
+                <option value="family">Family member or carer</option>
+                <option value="professional">Support coordinator / professional</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="field field-inline">
+              <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="04xx xxx xxx" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="support">What kind of support are you looking for?</label>
+              <textarea id="support" name="support" rows="3" placeholder="E.g. community access, help at home, transport to appointments…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Request a call back</button>
+            <p class="form-note">We’ll usually respond within one business day.</p>
+            <p class="form-success" id="form-success" hidden>
+              Thanks for reaching out. This demo form doesn’t submit anywhere, but this is where a success message would appear.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-muted">
+      <div class="container">
+        <header class="section-header">
+          <h2>Support that fits around your life</h2>
+          <p>Flexible, person-centred services that help you stay independent, safe, and connected — at home and in the community.</p>
+        </header>
+        <div class="grid grid-3">
+          <article class="card service-card">
+            <h3>Support work services</h3>
+            <p>
+              One-on-one support with daily living, personal care, and community access — always focused on your goals, routines, and preferences.
+            </p>
+            <ul>
+              <li>Daily living and personal care</li>
+              <li>Social and community participation</li>
+              <li>Building skills and confidence</li>
+              <li>Flexible hours, including evenings and weekends</li>
+            </ul>
+          </article>
+          <article class="card service-card">
+            <h3>Supported transport</h3>
+            <p>
+              Safe, reliable transport to appointments, activities, and social events — with support along the way, not just a ride.
+            </p>
+            <ul>
+              <li>Medical and therapy appointments</li>
+              <li>Shopping and errands</li>
+              <li>Social and community activities</li>
+              <li>Door-to-door, person-centred support</li>
+            </ul>
+          </article>
+          <article class="card service-card">
+            <h3>Home &amp; yard maintenance</h3>
+            <p>
+              Practical help to keep your home safe, tidy, and accessible so you can enjoy your space without the stress.
+            </p>
+            <ul>
+              <li>Gardening and lawn care</li>
+              <li>Yard clean-ups and rubbish removal</li>
+              <li>Light home maintenance and fixes</li>
+              <li>Safety-focused, respectful of your home</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Why families choose Living Right Care</h2>
+          <p>We combine professional experience with genuine human connection — so you always feel heard, respected, and supported.</p>
+        </header>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Trust</h3>
+            <p>
+              We treat every person with dignity, fairness, and honesty. Our team is carefully selected, trained, and supported to deliver safe, ethical care.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Partnerships</h3>
+            <p>
+              We work alongside you, your family, and your wider support team, advocating for your rights and focusing on what matters most to you.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Compassionate, holistic support</h3>
+            <p>
+              We see the whole person, not just a support plan — recognising the importance of physical, emotional, social, and mental wellbeing.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section section-muted">
+      <div class="container">
+        <header class="section-header">
+          <h2>Getting started is simple</h2>
+          <p>No pressure, no jargon — just a clear, friendly process to find the right support for you.</p>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <div class="step-number">1</div>
+            <div class="step-body">
+              <h3>Book a free meet &amp; greet</h3>
+              <p>Tell us about your situation, goals, and what a good day looks like for you.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-number">2</div>
+            <div class="step-body">
+              <h3>Build your support plan</h3>
+              <p>We work with you (and your support coordinator, if you have one) to tailor services around your life and funding.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-number">3</div>
+            <div class="step-body">
+              <h3>Start support — and adjust anytime</h3>
+              <p>Meet your support team, start services, and tweak things as your needs or goals change.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="portals" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Log in to your Living Right Care portal</h2>
+          <p>Different roles, shared purpose — safe, coordinated care. Choose the portal that matches how you work with us.</p>
+        </header>
+        <div class="grid grid-3">
+          <article id="doctor-portal" class="card">
+            <h3>Doctor login</h3>
+            <p>
+              Secure access for GPs and specialists to review shared care notes, update recommendations, and stay aligned with home and community support.
+            </p>
+            <a href="#" class="portal-link">Go to doctor portal</a>
+          </article>
+          <article id="nurse-portal" class="card">
+            <h3>Nurse login</h3>
+            <p>
+              A dedicated space for nurses to track visits, document observations, and coordinate with support workers across shifts and locations.
+            </p>
+            <a href="#" class="portal-link">Go to nurse portal</a>
+          </article>
+          <article id="patient-portal" class="card">
+            <h3>Patient &amp; family login</h3>
+            <p>
+              Simple tools for participants and families to view schedules, share preferences, and stay informed about day-to-day support.
+            </p>
+            <a href="#" class="portal-link">Go to patient portal</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-accent">
+      <div class="container contact-inner">
+        <div>
+          <h2>Ready to talk about support?</h2>
+          <p>
+            Reach out today to book your free, no-obligation meet and greet. We’ll listen, answer your questions, and help you explore your options.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Phone</strong> <span>Example: 1300 000 000</span></li>
+            <li><strong>Email</strong> <span>hello@example-lrcare.com.au</span></li>
+            <li><strong>Service areas</strong> <span>Replace with your local regions</span></li>
+          </ul>
+        </div>
+        <div class="contact-highlight">
+          <p class="contact-badge">Free meet &amp; greet</p>
+          <p class="contact-text">
+            Invite us into the conversation before you invite us into your home. Our first step is always a relaxed, pressure-free chat.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Living Right Care. For demonstration purposes only.</p>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple demo-only enhancements: smooth scrolling and fake form submission handling
+    document.querySelectorAll('[data-scroll-to]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var target = document.querySelector(btn.getAttribute('data-scroll-to'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    const form = document.getElementById('quick-contact-form');
+    const success = document.getElementById('form-success');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        success.hidden = false;
+        form.classList.add('form-submitted');
+      });
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
