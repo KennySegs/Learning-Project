@@ -27,13 +27,26 @@
         <a href="#contact">Contact</a>
       </nav>
       <div class="header-right">
-        <div class="login-links">
-          <span class="login-label">Login</span>
-          <a href="#doctor-portal">Doctors</a>
-          <span class="divider">•</span>
-          <a href="#nurse-portal">Nurses</a>
-          <span class="divider">•</span>
-          <a href="#patient-portal">Patients</a>
+        <div class="login-dropdown" data-login-dropdown>
+          <button class="login-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="login-label">Login</span>
+            <span class="login-current">Select role</span>
+            <span class="login-chevron">▾</span>
+          </button>
+          <div class="login-menu" role="menu" aria-label="Login options">
+            <a href="#doctor-portal" class="login-item" role="menuitem" data-login-role="Doctors">
+              <span class="login-item-title">Doctors</span>
+              <span class="login-item-desc">Access the doctor portal</span>
+            </a>
+            <a href="#nurse-portal" class="login-item" role="menuitem" data-login-role="Nurses">
+              <span class="login-item-title">Nurses</span>
+              <span class="login-item-desc">Access the nurse portal</span>
+            </a>
+            <a href="#patient-portal" class="login-item" role="menuitem" data-login-role="Patients &amp; family">
+              <span class="login-item-title">Patients &amp; family</span>
+              <span class="login-item-desc">Access the participant portal</span>
+            </a>
+          </div>
         </div>
         <a href="#contact" class="btn btn-outline header-cta">Book a meet &amp; greet</a>
       </div>
@@ -295,6 +308,49 @@
         e.preventDefault();
         success.hidden = false;
         form.classList.add('form-submitted');
+      });
+    }
+
+    // Header login dropdown behaviour
+    const dropdown = document.querySelector('[data-login-dropdown]');
+    if (dropdown) {
+      const toggle = dropdown.querySelector('.login-toggle');
+      const menu = dropdown.querySelector('.login-menu');
+      const current = dropdown.querySelector('.login-current');
+
+      function closeMenu() {
+        dropdown.classList.remove('is-open');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      }
+
+      function openMenu() {
+        dropdown.classList.add('is-open');
+        if (toggle) toggle.setAttribute('aria-expanded', 'true');
+      }
+
+      toggle.addEventListener('click', function () {
+        const open = dropdown.classList.contains('is-open');
+        if (open) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      menu.addEventListener('click', function (event) {
+        const item = event.target.closest('.login-item');
+        if (!item) return;
+        const role = item.getAttribute('data-login-role');
+        if (role && current) {
+          current.textContent = role;
+        }
+        closeMenu();
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!dropdown.contains(event.target)) {
+          closeMenu();
+        }
       });
     }
 
