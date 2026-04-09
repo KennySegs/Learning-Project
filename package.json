@@ -1,0 +1,30 @@
+{
+  "name": "livingrite-learning-project",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:vercel": "vercel dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "vercel": "vercel",
+    "deploy": "vercel",
+    "deploy:prod": "vercel --prod",
+    "cf:pages:dev": "npm run build && wrangler pages dev dist --compatibility-date=2024-12-01 --env-file=.env",
+    "cf:deploy": "npm run build && wrangler pages deploy dist --project-name=livingrite-learning-project"
+  },
+  "dependencies": {
+    "@clerk/clerk-js": "^6.3.2",
+    "@sentry/browser": "^10.45.0",
+    "@supabase/supabase-js": "^2.49.1",
+    "resend": "^6.9.4"
+  },
+  "devDependencies": {
+    "vercel": "^50.35.0",
+    "vite": "^6.2.0",
+    "wrangler": "^4.77.0"
+  }
+}

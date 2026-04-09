@@ -1,0 +1,7 @@
+# Cloudflare Pages — https://developers.cloudflare.com/pages/functions/wrangler-configuration/
+name = "livingrite-learning-project"
+compatibility_date = "2024-12-01"
+pages_build_output_dir = "dist"
+
+# Production secrets (RESEND_API_KEY, RESEND_TO, etc.) are set in:
+# Cloudflare Dashboard → Workers & Pages → your project → Settings → Variables and Secrets

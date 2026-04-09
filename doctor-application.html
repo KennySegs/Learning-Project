@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor application – Living Rights Care Services</title>
+  <meta name="description" content="Apply to join our home-based care team as a doctor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="portal-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand brand-link">
+        <div class="brand-mark">LR</div>
+        <div class="brand-text">
+          <span class="brand-name">Living Rights Care Services</span>
+          <span class="brand-tagline">Post-ICU recovery &amp; home-based care</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/index.html#services">What we do</a>
+        <a href="/index.html#careers">Careers</a>
+        <a href="/doctor-application.html" aria-current="page">Doctor application</a>
+        <a href="/portal.html">Care portal</a>
+        <a href="/index.html#contact">Contact</a>
+      </nav>
+      <div class="header-right">
+        <div class="header-auth" id="header-auth"></div>
+        <a href="/index.html#contact" class="btn btn-outline header-cta">Book a consultation</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="doctor-application" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Doctor application form</h2>
+          <p>Answer a few quick questions and upload your credentials so our recruitment team can review your profile.</p>
+        </header>
+        <div class="hero-card">
+          <form class="hero-form" id="doctor-application-form">
+            <div class="field">
+              <label for="doctor-name">Full name</label>
+              <input type="text" id="doctor-name" name="doctor-name" placeholder="Dr. Jane Doe" required />
+            </div>
+            <div class="field field-inline">
+              <div>
+                <label for="doctor-email">Email</label>
+                <input type="email" id="doctor-email" name="doctor-email" placeholder="you@example.com" required />
+              </div>
+              <div>
+                <label for="doctor-phone">Phone (Nigeria)</label>
+                <input type="tel" id="doctor-phone" name="doctor-phone" placeholder="+234..." required />
+              </div>
+            </div>
+            <div class="field field-inline">
+              <div>
+                <label for="specialty">Medical specialty</label>
+                <input type="text" id="specialty" name="specialty" placeholder="E.g. Internal Medicine, Family Medicine" />
+              </div>
+              <div>
+                <label for="experience-years">Years of experience</label>
+                <input type="number" id="experience-years" name="experience-years" min="0" placeholder="5" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="lagos-based">Are you currently based in Lagos or able to travel regularly to Lagos?</label>
+              <select id="lagos-based" name="lagos-based">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="doctor-notes">Tell us about your interest in home-based care</label>
+              <textarea id="doctor-notes" name="doctor-notes" rows="3" placeholder="Share relevant experience with homecare, ICU, chronic disease management, or elderly care."></textarea>
+            </div>
+            <div class="field">
+              <label for="credentials">Upload credentials (CV, license, certificates)</label>
+              <input type="file" id="credentials" name="credentials" multiple />
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Submit application (demo only)</button>
+            <p class="form-note">This demo form does not send data, but shows how Living Rights Care Services could collect applications.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Living Rights Care Services.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/index.html#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/doctor-application-main.js"></script>
+</body>
+</html>

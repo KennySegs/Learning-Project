@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LivingRite Care – Expert Home Nursing Care in Nigeria</title>
-  <meta name="description" content="LivingRite Care is Nigeria's leading homecare provider, delivering hospital-level nursing and elderly care in the comfort of your home across Lagos and surrounding areas." />
+  <title>Living Rights Care Services – Post-ICU Recovery</title>
+  <meta name="description" content="Living Rights Care Services supports post-ICU recovery with coordinated doctors, nurses, and physiotherapists matched to patients by location and need." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,8 +16,8 @@
       <div class="brand">
         <div class="brand-mark">LR</div>
         <div class="brand-text">
-          <span class="brand-name">LivingRite Care</span>
-          <span class="brand-tagline">Nigeria's leading homecare provider</span>
+          <span class="brand-name">Living Rights Care Services</span>
+          <span class="brand-tagline">Post-ICU recovery &amp; home-based care</span>
         </div>
       </div>
       <nav class="nav">
@@ -25,23 +25,26 @@
         <a href="#why-us">Why choose us</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#careers">Join our team</a>
+        <a href="/portal.html">Care portal</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="header-right">
-        <div class="login-dropdown" data-login-dropdown>
-          <button class="login-toggle" type="button" aria-haspopup="true" aria-expanded="false">
-            <span class="login-label">Login</span>
-            <span class="login-chevron">▾</span>
-          </button>
-          <div class="login-menu" role="menu" aria-label="Login options">
-            <a href="#" class="login-item" role="menuitem">
-              <span class="login-item-title">Go to login portal</span>
-              <span class="login-item-desc">Use your existing LivingRite Care login details.</span>
-            </a>
-            <a href="#doctor-application" class="login-item" role="menuitem">
-              <span class="login-item-title">Doctor application form</span>
-              <span class="login-item-desc">Answer screening questions and upload your credentials.</span>
-            </a>
+        <div class="header-auth" id="header-auth">
+          <div class="login-dropdown" data-login-dropdown>
+            <button class="login-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+              <span class="login-label">Login</span>
+              <span class="login-chevron">▾</span>
+            </button>
+            <div class="login-menu" role="menu" aria-label="Login options">
+              <a href="/portal.html" class="login-item" role="menuitem">
+                <span class="login-item-title">Care portal</span>
+                <span class="login-item-desc">Sign in with Clerk when configured, or add your publishable key in .env.</span>
+              </a>
+              <a href="/doctor-application.html" class="login-item" role="menuitem">
+                <span class="login-item-title">Doctor application form</span>
+                <span class="login-item-desc">Answer screening questions and upload your credentials.</span>
+              </a>
+            </div>
           </div>
         </div>
         <a href="#contact" class="btn btn-outline header-cta">Book a consultation</a>
@@ -55,7 +58,7 @@
         <div class="hero-copy">
           <h1>Expert home nursing care <span class="accent">in Nigeria</span></h1>
           <p class="hero-lead">
-            LivingRite Care brings hospital-level nursing services to your doorstep – from post-ICU recovery and stroke care
+            Living Rights Care Services brings hospital-level nursing services to your doorstep – from post-ICU recovery and stroke care
             to chronic disease management and elderly care, all in the comfort of your home.
           </p>
           <div class="hero-actions">
@@ -73,7 +76,7 @@
         <div class="hero-card">
           <div class="hero-card-header">
             <h2>Book a free homecare consultation</h2>
-            <p>Share a few details and a LivingRite Care coordinator will contact you to discuss the best care options.</p>
+            <p>Share a few details and a Living Rights Care Services coordinator will contact you to discuss the best care options.</p>
           </div>
           <form class="hero-form" id="quick-contact-form">
             <div class="field">
@@ -105,9 +108,7 @@
             </div>
             <button type="submit" class="btn btn-primary btn-full">Request a call back</button>
             <p class="form-note">We aim to respond within one business day.</p>
-            <p class="form-success" id="form-success" hidden>
-              Thanks for reaching out. This demo form doesn’t submit anywhere, but this is where a success message would appear.
-            </p>
+            <p class="form-success" id="form-success" hidden></p>
           </form>
         </div>
       </div>
@@ -117,7 +118,7 @@
       <div class="container">
         <header class="section-header">
           <h2>Comprehensive homecare services tailored to your needs</h2>
-          <p>LivingRite Care offers a full range of home-based healthcare services designed to support recovery, independence, and quality of life.</p>
+          <p>Living Rights Care Services offers a full range of home-based healthcare services designed to support recovery, independence, and quality of life.</p>
         </header>
         <div class="grid grid-3">
           <article class="card service-card">
@@ -163,7 +164,7 @@
     <section id="why-us" class="section">
       <div class="container">
         <header class="section-header">
-          <h2>Why families trust LivingRite Care</h2>
+          <h2>Why families trust Living Rights Care Services</h2>
           <p>We bridge the gap between hospital and home with safe, professional, and deeply compassionate care.</p>
         </header>
         <div class="grid grid-3">
@@ -192,7 +193,7 @@
     <section id="process" class="section section-muted">
       <div class="container">
         <header class="section-header">
-          <h2>How homecare with LivingRite Care works</h2>
+          <h2>How homecare with Living Rights Care Services works</h2>
           <p>A simple, guided process from first conversation to ongoing support at home.</p>
         </header>
         <ol class="steps">
@@ -220,6 +221,17 @@
         </ol>
       </div>
     </section>
+
+    <section id="care-portal-cta" class="section section-portal">
+      <div class="container">
+        <header class="section-header">
+          <h2>Care portal</h2>
+          <p>Sign in on the care portal page to choose your role, complete intake, view your submitted information, and use provider matching.</p>
+          <p><a href="/portal.html" class="btn btn-primary">Open care portal</a></p>
+        </header>
+      </div>
+    </section>
+
 
     <section id="testimonials" class="section">
       <div class="container">
@@ -256,7 +268,7 @@
       <div class="container">
         <header class="section-header">
           <h2>We’re recruiting doctors and nurses</h2>
-          <p>Join LivingRite Care’s growing team bringing expert, compassionate homecare to patients across Lagos and surrounding areas.</p>
+          <p>Join Living Rights Care Services’s growing team bringing expert, compassionate homecare to patients across Lagos and surrounding areas.</p>
         </header>
         <div class="grid grid-3">
           <article class="card">
@@ -265,7 +277,7 @@
               Collaborate with a multidisciplinary team to deliver hospital-level care at home – from post-ICU recovery to complex chronic disease management.
             </p>
             <p class="hero-meta-label">Ideal for consultants and GPs with an interest in home-based care.</p>
-            <a href="#doctor-application" class="portal-link">Apply as a doctor</a>
+            <a href="/doctor-application.html" class="portal-link">Apply as a doctor</a>
           </article>
           <article class="card">
             <h3>For nurses</h3>
@@ -273,62 +285,8 @@
               Provide one-on-one, patient-centred nursing in a calm home environment, supported by clear protocols and ongoing professional development.
             </p>
             <p class="hero-meta-label">Suitable for RNs with experience in ICU, medical-surgical, or community nursing.</p>
-            <a href="mailto:careers@example-livingritecare.com?subject=Nurse%20Application%20-%20LivingRite%20Care" class="portal-link">Apply as a nurse</a>
+            <a href="mailto:careers@example-livingritecare.com?subject=Nurse%20Application%20-%20Living%20Rights%20Care%20Services" class="portal-link">Apply as a nurse</a>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="doctor-application" class="section">
-      <div class="container">
-        <header class="section-header">
-          <h2>Doctor application form</h2>
-          <p>Answer a few quick questions and upload your credentials so our recruitment team can review your profile.</p>
-        </header>
-        <div class="hero-card">
-          <form class="hero-form" id="doctor-application-form">
-            <div class="field">
-              <label for="doctor-name">Full name</label>
-              <input type="text" id="doctor-name" name="doctor-name" placeholder="Dr. Jane Doe" required />
-            </div>
-            <div class="field field-inline">
-              <div>
-                <label for="doctor-email">Email</label>
-                <input type="email" id="doctor-email" name="doctor-email" placeholder="you@example.com" required />
-              </div>
-              <div>
-                <label for="doctor-phone">Phone (Nigeria)</label>
-                <input type="tel" id="doctor-phone" name="doctor-phone" placeholder="+234..." required />
-              </div>
-            </div>
-            <div class="field field-inline">
-              <div>
-                <label for="specialty">Medical specialty</label>
-                <input type="text" id="specialty" name="specialty" placeholder="E.g. Internal Medicine, Family Medicine" />
-              </div>
-              <div>
-                <label for="experience-years">Years of experience</label>
-                <input type="number" id="experience-years" name="experience-years" min="0" placeholder="5" />
-              </div>
-            </div>
-            <div class="field">
-              <label for="lagos-based">Are you currently based in Lagos or able to travel regularly to Lagos?</label>
-              <select id="lagos-based" name="lagos-based">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="doctor-notes">Tell us about your interest in home-based care</label>
-              <textarea id="doctor-notes" name="doctor-notes" rows="3" placeholder="Share relevant experience with homecare, ICU, chronic disease management, or elderly care."></textarea>
-            </div>
-            <div class="field">
-              <label for="credentials">Upload credentials (CV, license, certificates)</label>
-              <input type="file" id="credentials" name="credentials" multiple />
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">Submit application (demo only)</button>
-            <p class="form-note">This demo form does not send data, but shows how LivingRite Care could collect applications.</p>
-          </form>
         </div>
       </div>
     </section>
@@ -338,7 +296,7 @@
         <div>
           <h2>Ready to bring hospital-level care home?</h2>
           <p>
-            Reach out today to speak with a LivingRite Care coordinator about home nursing, rehabilitation, or elderly care in Lagos and surrounding areas.
+            Reach out today to speak with a Living Rights Care Services coordinator about home nursing, rehabilitation, or elderly care in Lagos and surrounding areas.
           </p>
           <ul class="contact-list">
             <li><strong>Phone</strong> <span>+234 818 569 0969 &nbsp;&middot;&nbsp; +234 703 593 2851</span></li>
@@ -358,7 +316,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> LivingRite Care. This is a learning/demo landing page inspired by their official site.</p>
+      <p>&copy; <span id="year"></span> Living Rights Care Services. Learning / demo site.</p>
       <div class="footer-links">
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
@@ -366,60 +324,6 @@
     </div>
   </footer>
 
-  <script>
-    // Simple demo-only enhancements: smooth scrolling and fake form submission handling
-    document.querySelectorAll('[data-scroll-to]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var target = document.querySelector(btn.getAttribute('data-scroll-to'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-
-    const form = document.getElementById('quick-contact-form');
-    const success = document.getElementById('form-success');
-    if (form) {
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        success.hidden = false;
-        form.classList.add('form-submitted');
-      });
-    }
-
-    // Simple generic login dropdown with doctor application alternative
-    const loginDropdown = document.querySelector('[data-login-dropdown]');
-    if (loginDropdown) {
-      const loginToggle = loginDropdown.querySelector('.login-toggle');
-      const loginMenu = loginDropdown.querySelector('.login-menu');
-
-      function closeLoginMenu() {
-        loginDropdown.classList.remove('is-open');
-        if (loginToggle) loginToggle.setAttribute('aria-expanded', 'false');
-      }
-
-      function openLoginMenu() {
-        loginDropdown.classList.add('is-open');
-        if (loginToggle) loginToggle.setAttribute('aria-expanded', 'true');
-      }
-
-      loginToggle.addEventListener('click', function () {
-        const open = loginDropdown.classList.contains('is-open');
-        if (open) {
-          closeLoginMenu();
-        } else {
-          openLoginMenu();
-        }
-      });
-
-      document.addEventListener('click', function (event) {
-        if (!loginDropdown.contains(event.target)) {
-          closeLoginMenu();
-        }
-      });
-    }
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
